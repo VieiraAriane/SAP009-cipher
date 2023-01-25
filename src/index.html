@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <body background="https://i.pinimg.com/564x/1d/06/39/1d063964d27c3d595c5e32be8759b791.jpg">
+
     <div id="root">
       <h1 id="titulo"></h1>
       <h2 id="subTitulo"></h2>
     </div>
-
-    <div id="numeroDeslocamento">
-      <p>Escolha o número de deslocamento para sua mensagem.</p>
-      <input type="number" id="offset" min="1" max="100" />
+    <!--Selecionar número de deslocamento do alfabeto-->
+    <div>
+      <p>Escolha o número de deslocamento</p>
+      <p><input type="number" id="offset" min="1" max="99" /> </p>
     </div>
-
-    <div id="box1">
-      <form action="">
-        <input
-          type="text"
-          name="codificado"
-          id="codificado"
-          placeholder="Cifre sua mensagem aqui"
-        />
-        <input type="submit" id="btnCodificar" value="Codificar mensagem" />
-      </form>
+    <!--Mensagem codificada-->
+    <div id="container">
+      <div class="box1">
+        <textarea name="texto1" id="texto1" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+        <p> <button id="codificar">Codificar mensagem</button></p>
+      </div>
+      <!--Mensagem decodoficada-->
+      <div class="box2">
+        <textarea name="texto2" id="texto2" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+        <p><button id="decodificar">Decodificar mensagem</button></p>
+      </div>
     </div>
+    <footer>
+      <div class="rodape">
+        <p id="logo">
+          <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" width="3%" height="3%" alt="Logo GitHub">
+          <a href="https://github.com/VieiraAriane/SAP009-cipher">Projeto criado por Ariane Vieira</a>
+        </p>
 
-    <div id="box2">
-      <form action="">
-        <input
-          type="text"
-          name="decodificar"
-          id="decodificar"
-          placeholder="decifre sua mensagem aqui"
-        />
-        <input type="submit" id="btnDecodificar" value="Decodificar mensagem" />
-      </form>
-    </div>
-
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
+</body>
+
 </html>

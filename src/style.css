@@ -1,10 +1,60 @@
-/* Selecionar box mensagens por classe*/
-.box1 {
-    border: 2px solid;
-    color: black;
-  }
-  .box2 {
-    border: 2px solid;
-    color: black;
-  }
-  
+#titulo {
+  color: crimson;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: serif;
+}
+#subTitulo {
+  color: rgb(94, 92, 92);
+  text-align: justify;
+}
+p {
+  color: black;
+  font-size: 20px;
+  text-transform: unset;
+  text-align: center;
+  font-family: serif;
+}
+input[type="number"] {
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: crimson;
+}
+#container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+div {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border: 2.5px solid crimson;
+  border-radius: 10px;
+}
+button {
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid crimson;
+  padding: 10px;
+}
+.logo {
+  background: rgb(250, 196, 214);
+  color: black;
+  font-style: italic;
+  font-size: 30px;
+  height: 5vh;
+}

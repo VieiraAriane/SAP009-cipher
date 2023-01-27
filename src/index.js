@@ -15,19 +15,20 @@ subTitulo.innerHTML =
 const codificar = document.querySelector("#codificar");
 function btn1() {
   const texto1 = document.querySelector("#texto1").value.toUpperCase();
-  const offset = document.querySelector("#offset");
-  const textoCodificado = cipher.encode(offset, texto1);
+  const offset1 = document.querySelector("#offset1");
+  const deslocamento = Number(offset1.value);
+  const textoCodificado = cipher.encode(deslocamento, texto1);
   document.querySelector("#texto1").value = textoCodificado;
 }
 codificar.addEventListener("click", btn1);
 
 // Evento botão descriptografar
 
-const decodificar = document.querySelector("#decodificar");
-function btn2() {
-  const texto2 = document.querySelector("#texto2").value.toUpperCase();
-  const offset = document.querySelector("#offset");
-  const textoDecodificado = cipher.decode(offset, texto2);
-  document.querySelector("#texto2").value = textoDecodificado;
-}
-decodificar.addEventListener("click", btn2);
+// const decodificar = document.querySelector("#decodificar");
+// function btn2() {
+//   const texto2 = document.querySelector("#texto2").value.toUpperCase();
+//   const offset1 = document.querySelector("#offset1");
+//   const textoDecodificado = cipher.decode(offset1, texto2);
+//   document.querySelector("#texto2").value = textoDecodificado;
+// }
+// decodificar.addEventListener("click", btn2);

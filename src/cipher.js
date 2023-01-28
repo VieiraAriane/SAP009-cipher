@@ -3,9 +3,8 @@ const codigoAscii = 65;
 
 const cipher = {
   encode: function encode(offset, string) {
-    // alert(typeof offset);
     if (offset === null) {
-      throw new TypeError("Escolha um número de deslocamento");
+      throw new TypeError("Erro");
     } else {
       let resultadoCifra = "";
       for (let i = 0; i < string.length; i++) {
@@ -20,17 +19,22 @@ const cipher = {
       return resultadoCifra;
     }
   },
+  decode: function decode(offset, string) {
+    if (offset === null) {
+      throw new TypeError("Erro");
+    } else {
+      let resultadoDecifra = "";
+      for (let i = 0; i < string.length; i++) {
+        const decifra = string.charCodeAt(i);
+        let decodificar =
+          ((decifra + codigoAscii - offset) % tamanhoAlfabeto) + codigoAscii;
+        if (decifra <= 64 || decifra >= 90) {
+          decodificar = decifra;
+        }
+        resultadoDecifra += String.fromCharCode(decodificar);
+      }
+      return resultadoDecifra;
+    }
+  },
 };
-// decode: function decode(offset, string) {
-//   let resultadoDecifra = "";
-//   for (let i = 0; i < string.length; i++) {
-//     const char2 = string[i];
-//     const decodificar =
-//       ((char2.charCodeAt(0) + codigoAscii - offset + tamanhoAlfabeto) %
-//         tamanhoAlfabeto) +
-//       codigoAscii;
-//     resultadoDecifra += String.fromCharCode(decodificar);
-//   }
-//   return resultadoDecifra;
-
 export default cipher;

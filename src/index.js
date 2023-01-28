@@ -24,11 +24,12 @@ codificar.addEventListener("click", btn1);
 
 // Evento botão descriptografar
 
-// const decodificar = document.querySelector("#decodificar");
-// function btn2() {
-//   const texto2 = document.querySelector("#texto2").value.toUpperCase();
-//   const offset1 = document.querySelector("#offset1");
-//   const textoDecodificado = cipher.decode(offset1, texto2);
-//   document.querySelector("#texto2").value = textoDecodificado;
-// }
-// decodificar.addEventListener("click", btn2);
+const decodificar = document.querySelector("#decodificar");
+function btn2() {
+  const texto2 = document.querySelector("#texto2").value.toUpperCase();
+  const offset2 = document.querySelector("#offset2");
+  const deslocamento2 = Number(offset2.value);
+  const textoDecodificado = cipher.decode(deslocamento2, texto2);
+  document.querySelector("#texto2").value = textoDecodificado;
+}
+decodificar.addEventListener("click", btn2);

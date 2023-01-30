@@ -3,8 +3,9 @@ const codigoAscii = 65;
 
 const cipher = {
   encode: function encode(offset, string) {
-    if (offset === 0) {
-      alert("escolha uma senha de 1 a 99!");
+    if (offset === null || string === [] || offset === 0 || string === 0) {
+      throw new TypeError();
+      // alert("escolha uma senha de 1 a 99!");
     } else {
       let resultadoCifra = "";
       for (let i = 0; i < string.length; i++) {
@@ -20,9 +21,8 @@ const cipher = {
     }
   },
   decode: function decode(offset, string) {
-    if (offset === 0) {
-      alert("Use a mesma senha usada para codificar!");
-      throw new TypeError("Erro");
+    if (offset === null || string === [] || offset === 0 || string === 0) {
+      throw new TypeError();
     } else {
       let resultadoDecifra = "";
       for (let i = 0; i < string.length; i++) {

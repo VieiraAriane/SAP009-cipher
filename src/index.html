@@ -8,48 +8,40 @@
 </head>
 
 <body>
-  <!-- Passar para CSS -->
+  <div id="root">
+    <h1 id="titulo"></h1>
+    <h2 id="subTitulo"></h2>
+  </div>
+  <!--Mensagem codificada-->
+  <div id="container">
 
-  <body background="https://i.pinimg.com/564x/1d/06/39/1d063964d27c3d595c5e32be8759b791.jpg">
-
-    <div id="root">
-      <h1 id="titulo"></h1>
-      <h2 id="subTitulo"></h2>
+    <div class="box1">
+      <div><input type="number" id="offset1" min="0" max="99" /></div>
+      <textarea class="texto" id="texto1" cols="30" rows="10" onkeyup="this.value = this.value.toUpperCase();" placeholder="Digite sua mensagem aqui"></textarea>
+      <div><button id="codificar">Codificar</button></div>
     </div>
-    <!--Mensagem codificada-->
-    <div id="container">
-      <div>
-        <p>Escolha o número de deslocamento</p>
-        <input type="number" id="offset1" min="1" max="99" />
-      </div>
-      <div class="box1">
-        <textarea name="texto1" id="texto1" cols="30" rows="10" onkeyup="this.value = this.value.toUpperCase();" placeholder="Digite sua mensagem aqui"></textarea>
-        <button id="codificar">Codificar mensagem</button>
-      </div>
 
-      <!--Mensagem decodoficada-->
+    <!--Mensagem decodoficada-->
+    <div class="box2">
       <div>
-        <p>Escolha o número de deslocamento</p>
-        <input type="number" id="offset2" min="1" max="99" />
+        <input type="number" min="0" max="99" id="offset2" />
       </div>
-      <div class="box2">
-        <textarea name="texto2" id="texto2" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
-        <div>
-          <button id="decodificar">Decodificar mensagem</button>
-        </div>
+      <textarea class="texto" id="texto2" cols="30" rows="10" onkeyup="this.value = this.value.toUpperCase();" placeholder="Digite sua mensagem aqui"></textarea>
+      <div>
+        <button id="decodificar">Decodificar </button>
       </div>
-      <footer>
-        <div class="rodape">
-          <p id="logo">
-            <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" width="3%" height="3%" alt="Logo GitHub">
-            <a href="https://github.com/VieiraAriane/SAP009-cipher">Projeto criado por Ariane Vieira</a>
-          </p>
-
-        </div>
-      </footer>
-      <script src="index.js" type="module"></script>
     </div>
-  </body>
+  </div>
+
+  <footer>
+    <div class="rodape">
+      <p id="logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" width="4%" height="3%" alt="Logo GitHub">
+        <a href="https://github.com/VieiraAriane">Projeto criado por Ariane Vieira</a>
+      </p>
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>

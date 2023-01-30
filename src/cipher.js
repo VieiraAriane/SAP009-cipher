@@ -3,8 +3,8 @@ const codigoAscii = 65;
 
 const cipher = {
   encode: function encode(offset, string) {
-    if (offset === null) {
-      throw new TypeError("Erro");
+    if (offset === 0) {
+      alert("escolha uma senha de 1 a 99!");
     } else {
       let resultadoCifra = "";
       for (let i = 0; i < string.length; i++) {
@@ -20,7 +20,8 @@ const cipher = {
     }
   },
   decode: function decode(offset, string) {
-    if (offset === null) {
+    if (offset === 0) {
+      alert("Use a mesma senha usada para codificar!");
       throw new TypeError("Erro");
     } else {
       let resultadoDecifra = "";

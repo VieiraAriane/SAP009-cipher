@@ -7,6 +7,7 @@
 - [3. Protótipo](#3-Protótipo)
 - [4. Usuários e Necessidades do usuário](#4-Usuários-e-necessidades-do-usuário)
 - [5. Instruções de uso](#5-Instruções-de-uso)
+- [6. Projeto final](#6-projeto-final)
 
 ## 1. Prefácio
 
@@ -50,7 +51,8 @@ A partir dela, foi criado o projeto Papo de busão, que visa garantir a proteç�
 ## 3. Protótipo
 
 O layout foi projetado com agilidade, visando uma aparência limpa e objetiva, como mostrado na imagem. Ao final, mostraremos a imagem final com pequenas mudanças.
-<img src="C:\Users\arian\Downloads\prototipociplher.jpeg" alt="Desenho protótipo">
+
+![prototipociplher](https://user-images.githubusercontent.com/107221542/215860581-5c8740ba-31fd-4977-9a72-563e49921fcb.jpeg)
 
 ## 4. Usuários e Necessidades do usuário
 
@@ -59,10 +61,9 @@ A aplicação tem como público alvo adultos que utilizam transporte coletivo. F
 ## 5. Instruções de uso
 
 Para que o usuário utilize a aplicação de forma correta foi criado um prompt de instruçoes conforme imagem a seguir.
-<img src="C:\Users\arian\Desktop\2023-01-31 (1).png" alt="Prompt informativo">
+![prompt](https://user-images.githubusercontent.com/107221542/215861728-8d0afed0-f92a-476f-9ccd-9bbb7553453a.png)
 
 ## 6. Projeto final
 
 Como mencionado anteriormente, o projeto tem um layote simple e intuitivo. Vemos no primeiro espaço um local para por a senha, o mesmo serve para que ocorra o deslocamento do alfabeto. Abaixo vemos o local onde a mensagem deve ser digita e após isso o botão codificar, o mesmo faz essa função e envia o texto para a caixa seguinte. Para decodicar a mensagem é necessário que o número da senha seja o mesmo utilizado no envio, após esse processo o botão decodificar transforma a mensagem no alfabeto normal novamente. Essa aplicação só faz a leitura de caracteres em formato maiúsculo, mas não é necessário que o usuário se preocupe com isso, visto que ao digitar e enviar a mensagem o mesmo já transforma as letras no formato desejado para que ocorra codificação e decodificação de forma correta.
-
-<img src="C:\Users\arian\Desktop\2023-01-31 (2).png" alt="Foto geral da aplicação">
+![final](https://user-images.githubusercontent.com/107221542/215861809-aedb33ae-3445-481c-9b7c-e951b76edee2.png)

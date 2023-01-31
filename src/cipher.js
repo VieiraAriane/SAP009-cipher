@@ -12,7 +12,7 @@ const cipher = {
         const cifra = string.charCodeAt(i);
         let codificar =
           ((cifra - codigoAscii + offset) % tamanhoAlfabeto) + codigoAscii;
-        if (cifra <= 64 || cifra >= 90) {
+        if (cifra <= 64 || cifra >= 97) {
           codificar = cifra;
         }
         resultadoCifra += String.fromCharCode(codificar);
@@ -29,7 +29,7 @@ const cipher = {
         const decifra = string.charCodeAt(i);
         let decodificar =
           ((decifra + codigoAscii - offset) % tamanhoAlfabeto) + codigoAscii;
-        if (decifra <= 64 || decifra >= 90) {
+        if (decifra <= 64 || decifra >= 97) {
           decodificar = decifra;
         }
         resultadoDecifra += String.fromCharCode(decodificar);

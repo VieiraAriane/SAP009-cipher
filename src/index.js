@@ -32,3 +32,6 @@ function btn2() {
   document.querySelector("#texto2").value = textoDecodificado;
 }
 decodificar.addEventListener("click", btn2);
+alert(
+  "Olá!\n Bem vindo a esse ambiente seguro para troca de mensagens.\n Mas antes vamos lhe dar algumas dicas de uso.\n ✅ Certifique-se que tenha escolhido uma senha antes de enviar sua mensagem, essa é a garantia de que tudo fique bagunçado 😂.\n ✅Lembre-se dessa senha, pois ela será necessária para que a outra pessoa que irá receber sua mensagem possa desbagunçar ela, ou seja, 'traduzir o texto'.\n Depois disso é só usar, bom proveito! 🤪"
+);
